@@ -1,0 +1,14 @@
+@keyframes example {
+    0%   { left:0px; top:0px;}
+    55%  { left:200px; top:0px;}
+  }
+#image{
+    transition-duration: 500ms;
+    transition-delay: 0s;
+}
+
+#imageGroup {
+    display: flex;
+    /* width: 540px; */
+    overflow: hidden;
+}

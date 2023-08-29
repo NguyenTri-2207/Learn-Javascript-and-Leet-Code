@@ -1,0 +1,58 @@
+.main {
+  background-color: #e3f9ff;
+}
+ul li {
+  position: relative;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding-right: 30px;
+}
+ul li::before {
+  content: " ";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-image: url(./images/unchecked.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 3px;
+  left: -30px;
+}
+.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: " ";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-image: url(./images/checked.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 3px;
+  left: -30px;
+}
+.removeTask {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  color: #6d6b6b;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  &:hover {
+    background-color: #555;
+    color: #fff;
+  }
+}
