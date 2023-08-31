@@ -1,20 +1,42 @@
-const optionDisscount = [1, 2, 3, 4];
+const optionDisscount = [
+  "Vietnam-Accounting-Standards.jpg",
+  "Vietnam-Corporate-Tax-1.jpg",
+  "Vietnam-Import-Regulations-An-Indepth-Explanation.jpg",
+];
 
-const a = optionDisscount.map((item, index) => {
-  console.log(index);
-  var newElement = document.createElement("img");
-  newElement.setAttribute(
-    "src",
-    `./image/thiet-ke-bo-nhan-dien-thuong-hieu-mau-${item}.png`
-  );
-  //   newElement.setAttribute("width", `540px`);
-  //   newElement.setAttribute("height", `full`);
+const imageGroup = document.querySelector("#imageGroup");
+const ButtonPrevious = document.querySelector(".fa-angle-left");
+const ButtonNext = document.querySelector(".fa-angle-right");
 
-  document.getElementById("imageGroup").appendChild(newElement);
+var image = "";
+let currentIndex = 0;
+const totalImages = optionDisscount.length;
+
+// Show Image
+optionDisscount.map((item, index) => {
+  image += `<img id="image" class="image w-full h-full" src="./image/${item}"/>`;
+  imageGroup.innerHTML = image;
 });
-console.log(a);
-const Next = () => {
-  console.log(1);
-  imageElement.style.transform = "translateX(552px)";
+const imageElement = document.getElementsByClassName("image");
+
+// previous controls
+ButtonPrevious.addEventListener("click", () => {
+  showSlides(currentIndex - 1);
+});
+
+// Next controls
+ButtonNext.addEventListener("click", () => {
+  showSlides(currentIndex + 1);
+});
+
+const showSlides = (index) => {
+  if (index < 0) {
+    index = totalImages - 1;
+  } else if (index >= totalImages) {
+    index = 0;
+  }
+  currentIndex = index;
+  imageGroup.style.transform = `translateX(-${currentIndex * 100}%)`;
 };
-var imageElement = document.getElementById("image");
+
+showSlides(currentIndex);
