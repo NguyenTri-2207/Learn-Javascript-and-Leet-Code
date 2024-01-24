@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="./index.js" defer></script>
+    <style>
+      @media only screen and (max-width: 900px) {
+        .nav-menu {
+          display: block;
+          position: fixed;
+          left: -100%;
+          top: 5rem;
+          flex-direction: column;
+          background-color: #fff;
+          width: 100%;
+          border-radius: 10px;
+          text-align: center;
+          transition: 0.3s;
+          box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-menu.active {
+          left: 0%;
+        }
+
+        .nav-item {
+          margin: 2.5rem 0;
+        }
+
+        .hamburger {
+          display: block;
+          cursor: pointer;
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+          opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+          transform: translateY(11px) rotate(45deg);
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+    </style>
+  </head>
+  <body id="body">
+    <header
+      id="header"
+      class="lg:bg-transparent fixed top-0 text-white z-50 w-full bg-black"
+    >
+      <nav
+        class="lg:flex justify-between center max-w-[1040px] py-4 m-auto bg-white lg:bg-transparent"
+      >
+        <!-- logo -->
+        <div class="flex justify-between items-center px-4 lg:w-2/12">
+          <div class="w-[130px]">
+            <img
+              loading="eager"
+              decoding="async"
+              src="https://bbcincorp.com/assets/images/layout/logo_black-layout.svg"
+              alt="logo"
+              width="130"
+              height="36"
+              class="h-full w-full"
+            />
+          </div>
+          <div class="lg:hidden block cursor-pointer" id="navbar-mobile">
+            <div class="hamburger">
+              <div
+                class="bar transition-all duration-200 ease-in-out bg-black h-0.5 w-9 my-2"
+              ></div>
+              <div class="bar bg-black h-0.5 w-9 my-2"></div>
+              <div
+                class="bar transition-all duration-200 ease-in-out bg-black h-0.5 w-9 my-2"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Item list -->
+        <div id="menu-list" class="lg:flex w-10/12 justify-between hidden">
+          <ul id="listItem" class="lg:flex justify-center w-10/12"></ul>
+          <!-- Contact -->
+          <div>
+            <button
+              id="set-up-now"
+              class="bg-white px-4 py-2 font-semibold rounded-full text-[#007EFE]"
+            >
+              Set Up Now
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="banner-min-h-600 relative bg-blue-200">
+      <div class="">
+        <div class="relative m-auto w-full 2xl:h-screen overflow-hidden">
+          <div
+            id="imageGroup"
+            class="flex transition-all duration-700 ease-in-out delay-75"
+          ></div>
+        </div>
+        <i
+          class="fa-solid fa-angle-left absolute left-3 z-2 top-1/2 text-xl leading-10 cursor-pointer shadow-2xl bg-gray-200 hover:bg-gray-100 rounded-full w-10 h-10 text-center text-white hover:text-blue-400 translate ease-in-out duration-300"
+        ></i>
+        <i
+          class="fa-solid fa-angle-right absolute right-3 top-1/2 text-xl leading-10 cursor-pointer shadow-2xl bg-gray-200 hover:bg-gray-100 rounded-full w-10 h-10 text-center text-white hover:text-blue-400 translate ease-in-out duration-300"
+        ></i>
+      </div>
+    </div>
+    <div class="max-w-[1040px] px-4 m-auto">
+      <div class="mt-10">
+        <h1 class="text-3xl font-bold text-center mb-4 text-[#007EFE]">
+          Offshore Offshore Search
+        </h1>
+        <p class="mb-4">
+          Offshore Offshore Search logo Set Up Now Login Company FormationSt.
+          Kitts & Nevis St. Kitts & Nevis Company Formation Excellent
+          placeholder Company incorporation in 3 days Dedicated support No
+          hidden fees guarantee See available package placeholder Company
+          FormationOpen Bank AccountOther Services Benefit Offshore Company
+          Registration In St. Kitts & Nevis No incomes, capital gains,
+          inheritance taxes No tax for profits from trading business with
+          CARIBCAN No annual financial records are required No searchable
+          beneficial ownership information No foreign exchange preventions
+          Member of the Commonwealth of Nations English-based law legal system
+          Feature International Business Company (IBC) icon 3-day incorporation
+          process.
+        </p>
+        <p class="mb-4">
+          No hidden fee icon All-in-one service icon Customized company package
+          Wave top St. Kitts & Nevis Company Formation Packages Basic US$1399
+          Company Formation Unlimited Name Availability Check Document
+          Preparation and Filing Company incorporation process 01 year Company
+          Secretarial service 01 year Registered Agent & Local Registered
+          Address All Government fee in 01 year Digital corporate documents *
+          This Package includes everything for a foreigner to set up a new St.
+          Kitts and Nevis International Business Company (IBC) from the
+          beginning ** All-in renewal fee at US$1,349 Get Started Standard
+          US$1799 Everything in Basic package Open Bank Account One-time fee for
+          application of one bank Bank account introduction for any banks in the
+          supported list Certificate of Incumbency (if required) Get Started
+          Premium.
+        </p>
+        <p class="mb-4">
+          US$2099 Everything in Standard package Premium Banking Support
+          Consulting on your suitable alternative banks if you fail your first
+          application Ability to open bank account remotely Fast responsiveness
+          even on weekends Frequent updates on bank account opening process Get
+          Started placeholder Refund Guarantee We refund your money in full for
+          services that we cannot deliver. Read our policy Bring Your Next
+          Business Venture Online placeholder Streamlined process Start at your
+          own pace. And reduce waiting time for back-and-forth email
+          communication. placeholder E-signature Collaborate with your partner
+          more easily. Less paperwork, more efficiency. placeholder Digitized
+          KYC Standardized form & organizational chart to let you control and
+          declare your information effortlessly.
+        </p>
+        <p class="mb-4">
+          infrastructure. And no worry about key compliance deadlines with auto
+          reminder. St. Kitts & Nevis Company Incorporation Process 1 Create
+          your orders Enter our online order platform for easy onboarding
+          experience and tailor your orders. We have different packages and
+          additional services that suit your goals. All information filled in is
+          secured over 256-bit encrypted line. 2 Make payment You can settle
+          payment for services via flexible payment options including
+          debit/credit card of Visa, Master, Amex or Bank Transfer. After you
+          complete payments, we will provide you a checklist of required
+          information for St. Kitts & Nevis company registration. 3 Collect and
+          verify KYC documents Once we've received your payment, our customer
+          service will contact you to process the necessary paperwork. We'll
+          guide you to properly prepare documents for incorporation in St. Kitts
+          & Nevis via KYC online form. You can also access our digital Client
+          Portal to proceed with the incorporation steps and keep track of the
+          process anytime, anywhere.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
