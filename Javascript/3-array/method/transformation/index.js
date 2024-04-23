@@ -1,0 +1,16 @@
+Array.prototype.copyWithin();
+Array.prototype.fill();
+Array.prototype.flat();
+Array.prototype.flatMap();
+Array.prototype.map();
+Array.prototype.pop();
+Array.prototype.push();
+Array.prototype.reduce();
+Array.prototype.reduceRight();
+Array.prototype.reverse();
+Array.prototype.shift();
+Array.prototype.slice();
+Array.prototype.sort();
+Array.prototype.splice();
+Array.prototype.unshift();
+Array.prototype.with();
