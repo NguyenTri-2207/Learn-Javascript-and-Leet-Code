@@ -1,0 +1,10 @@
+const obj = {
+  name: "John",
+  age: 30,
+};
+
+if (obj instanceof Object && !Array.isArray(obj) && obj !== undefined) {
+  console.log("obj is object");
+} else {
+  console.log("obj is not object");
+}

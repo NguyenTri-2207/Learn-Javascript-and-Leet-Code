@@ -3,4 +3,4 @@ const obj = {
   age: 30,
 };
 
-console.log(obj.name !== undefined); // true
+console.log("name" in obj); // true
