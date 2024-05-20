@@ -28,7 +28,7 @@ var twoSumS2 = function (arr, target) {
   }
 };
 
-// solution 3
+// solution 3  is
 var twoSumS3 = function (arr, target) {
   let map = new Map();
   for (let i = 0; i < arr.length; i++) {
