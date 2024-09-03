@@ -1,5 +1,10 @@
 // Loại bỏ id là 1 và 3 ra khỏi mảng, và trả về mảng mới.
 
+/* Short Code */
+const diffItemShort = (arr = [], otherArr = []) =>
+  arr.reduce((t, v) => (!otherArr.includes(v.id) && t.push(v), t), []);
+
+/* Long Code */
 const diffItem = (arr = [], otherArr = []) =>
   arr.reduce((accumulator, currentValue) => {
     if (!otherArr.includes(currentValue.id)) {
