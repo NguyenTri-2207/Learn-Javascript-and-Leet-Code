@@ -8,5 +8,7 @@ class Person {
   }
 }
 
+console.log("a");
+
 const person = new Person("Jonh", 29);
 console.log(person.getName());

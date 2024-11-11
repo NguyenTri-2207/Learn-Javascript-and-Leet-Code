@@ -6,7 +6,10 @@ function Person(name, age) {
   };
 }
 const person = new Person("Jonh", 29);
-console.log(person);
+const a = Object.assign(person);
+console.log(a);
+
+console.log(" -----------", person.getName());
 
 /******************** Other solutions ******************/
 
