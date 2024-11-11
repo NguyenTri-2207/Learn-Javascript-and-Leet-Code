@@ -1,0 +1,19 @@
+#Tab{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    box-shadow: (0,0,10,10 ,rgba(red, green, blue, alpha,0.5));
+    padding: 20px;
+    margin: 20px;
+   
+}
+#Tab p {
+    color: black;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-weight: 500;
+}

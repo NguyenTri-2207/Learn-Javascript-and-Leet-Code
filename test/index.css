@@ -1,0 +1,30 @@
+.active{
+    background-color: green;
+    color: white;
+    margin-top: 10px;
+}
+.unactive{
+    background-color: red;
+    color: white;
+    margin-top: 10px;
+}
+.container{
+    padding: 20px;
+}
+button{
+    padding: 8px 16px;
+    margin-right: 8px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 5px 4px #c1c1c1;
+    
+}
+#next{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: aqua;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
